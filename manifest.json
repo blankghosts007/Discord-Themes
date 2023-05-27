@@ -1,7 +1,7 @@
 {
   "name": "Discord Theme Loader",
   "version": "1.0",
-  "description": "A Chrome extension that allows users to upload .CSS themes in Discord.",
+  "description": "A Chrome extension that allows users to upload their own .CSS themes in Discord.",
   "manifest_version": 2,
   "content_scripts": [
     {
