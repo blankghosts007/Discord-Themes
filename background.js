@@ -10,3 +10,13 @@ chrome.storage.sync.get("themes", function(themes) {
     }
   }
 });
+
+// This function is called when the user uploads a new theme.
+chrome.storage.onChanged.addListener(function(changes) {
+  if (changes.themes) {
+    // Load the new theme.
+    chrome.tabs.executeScript(null, {
+      file: changes.themes.newTheme
+    });
+  }
+});
